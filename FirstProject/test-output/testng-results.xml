@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="47" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
+      <class name="tests.LogInTest">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTest@2b552920]" name="setup" is-config="true" duration-ms="-1586102196539" started-at="2020-04-05T17:56:36 CEST" finished-at="1970-01-01T01:00:00 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="signIn()[pri:0, instance:tests.LogInTest@2b552920]" name="signIn" duration-ms="0" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.LogInTest@2b552920]" name="afterClass" is-config="true" duration-ms="-1586102196570" started-at="2020-04-05T17:56:36 CEST" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.LogInTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
