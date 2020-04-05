@@ -1,4 +1,5 @@
 package tests;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,22 +8,38 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
+
 public class EnterTheStore {
 	private WebDriver driver;
 	private Properties locators;
 	private WebDriverWait waiter;
 
 	@BeforeClass
-	public void setup() throws FileNotFoundException, IOException {
-		System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
-		this.driver = new ChromeDriver();
+	@Parameters("browser")
+	public void setup(String browser) throws Exception {
+		if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "driver-lib\\firefoxdriver.exe");
+			this.driver = new FirefoxDriver();
+		} else if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
+			this.driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", "driver-lib\\msedgedriver.exe");
+			this.driver = new EdgeDriver();
+		} else {
+			throw new Exception("Browser is not correct");
+		}
 		this.locators = new Properties();
 		locators.load(new FileInputStream("config/petstore.properties"));
 		driver.manage().window().maximize();
@@ -42,7 +59,7 @@ public class EnterTheStore {
 
 	@AfterClass
 	public void afterClass() {
-	this.driver.close();
+		this.driver.close();
 	}
 
 }
