@@ -110,7 +110,7 @@ public class PetStoreMenuPage {
 		return allVerified;
 	}
 
-	public boolean leftNavLinksWorks() {
+	public boolean leftNavLinksWork() {
 		List<WebElement> leftNavLinks = driver.findElements(By.xpath(locators.getProperty("left_navigaton_links")));
 		boolean workingLeftLinks = false;
 		for (int i = 0; i < leftNavLinks.size(); i++) {
@@ -159,9 +159,9 @@ public class PetStoreMenuPage {
 		return workingCenterLinks;
 	}
 
-	public boolean allLinksWorks() {
+	public boolean allLinksWork() {
 		boolean allWorking = false;
-		if (leftNavLinksWorks() && upperNavLinksWork() && centerNavLinksWork()) {
+		if (leftNavLinksWork() && upperNavLinksWork() && centerNavLinksWork()) {
 			allWorking = true;
 		}
 		return allWorking;
