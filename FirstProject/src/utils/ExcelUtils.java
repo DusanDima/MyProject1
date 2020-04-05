@@ -38,7 +38,7 @@ public class ExcelUtils {
 			return true;
 		} catch (Exception e) {
 			System.out.println(e.toString());
-			System.out.println("Lose otvaranje fajla!");
+			System.out.println("File failed to open!");
 			return false;
 		}
 	}
@@ -49,7 +49,7 @@ public class ExcelUtils {
 			return true;
 		} catch (Exception e) {
 			System.out.println(e.toString());
-			System.out.println("Lose otvaranje worksheeta!");
+			System.out.println("Worksheet failed to open!");
 			return false;
 		}
 	}
