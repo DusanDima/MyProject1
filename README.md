@@ -7,6 +7,10 @@
 
 • Google Chrome, Version 80.0.3987.163 (Official Build) (64-bit) 
 
+• Mozilla Firefox, Version Version 74.0.1 (64-bit)
+
+• Microsoft Edge, Version 80.0.361.109 (Official build) (64-bit) 
+
 ___
 **Used libraries:**
 
