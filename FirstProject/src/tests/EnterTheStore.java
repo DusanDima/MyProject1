@@ -1,5 +1,4 @@
 package tests;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -19,7 +17,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
-
 public class EnterTheStore {
 	private WebDriver driver;
 	private Properties locators;
@@ -28,16 +25,19 @@ public class EnterTheStore {
 	@BeforeClass
 	@Parameters("browser")
 	public void setup(String browser) throws Exception {
-		if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "driver-lib\\firefoxdriver.exe");
+		if(browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "driver-lib\\geckodriver.exe");
 			this.driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("chrome")) {
+		}
+		else if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
 			this.driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("edge")) {
+		}
+		else if(browser.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", "driver-lib\\msedgedriver.exe");
 			this.driver = new EdgeDriver();
-		} else {
+		}
+		else {
 			throw new Exception("Browser is not correct");
 		}
 		this.locators = new Properties();
@@ -59,7 +59,8 @@ public class EnterTheStore {
 
 	@AfterClass
 	public void afterClass() {
-		this.driver.close();
+	this.driver.close();
+	
+	
 	}
-
 }
