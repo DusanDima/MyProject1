@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [https://petstore.octoperf.com/]">
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="tests.LogInTest">
+      <class name="tests.PetStoreMenu">
         <methods>
-          <include name="afterClass"/>
+          <include name="linksTakesToCorrectPageTest"/>
           <include name="setup"/>
-          <include name="signIn"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- tests.LogInTest -->
+      </class> <!-- tests.PetStoreMenu -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [https://petstore.octoperf.com/] -->

@@ -1,97 +1,440 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="27" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
+  <suite name="https://petstore.octoperf.com/" duration-ms="473403" started-at="2020-04-06T17:03:03 CEST" finished-at="2020-04-06T17:10:57 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
-      <class name="tests.LogInTest">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTest@2b552920]" name="setup" is-config="true" duration-ms="-1586102196539" started-at="2020-04-05T17:56:36 CEST" finished-at="1970-01-01T01:00:00 CET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:289)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
-at org.testng.internal.Parameters.createParameters(Parameters.java:721)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="ChromeTest" duration-ms="175785" started-at="2020-04-06T17:03:03 CEST" finished-at="2020-04-06T17:05:59 CEST">
+      <class name="tests.EnterTheStore">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.EnterTheStore@6e6c3152]" name="setup" is-config="true" duration-ms="9956" started-at="2020-04-06T17:03:03 CEST" finished-at="2020-04-06T17:03:13 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="signIn()[pri:0, instance:tests.LogInTest@2b552920]" name="signIn" duration-ms="0" started-at="2020-04-05T17:56:36 CEST" finished-at="2020-04-05T17:56:36 CEST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Dusan\AppData\Local\Temp\testng-eclipse--1598035155\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:289)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
-at org.testng.internal.Parameters.createParameters(Parameters.java:721)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="enterStore()[pri:0, instance:tests.EnterTheStore@6e6c3152]" name="enterStore" duration-ms="624" started-at="2020-04-06T17:03:13 CEST" finished-at="2020-04-06T17:03:14 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterStore -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.EnterTheStore@6e6c3152]" name="afterClass" is-config="true" duration-ms="88" started-at="2020-04-06T17:03:14 CEST" finished-at="2020-04-06T17:03:14 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.EnterTheStore -->
+      <class name="tests.PetStoreMenu">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.PetStoreMenu@50b494a6]" name="setup" is-config="true" duration-ms="9387" started-at="2020-04-06T17:03:14 CEST" finished-at="2020-04-06T17:03:23 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="allLinksVerifyTest()[pri:1, instance:tests.PetStoreMenu@50b494a6]" name="allLinksVerifyTest" duration-ms="3599" started-at="2020-04-06T17:03:23 CEST" finished-at="2020-04-06T17:03:27 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allLinksVerifyTest -->
+        <test-method status="PASS" signature="linksTakesToCorrectPageTest()[pri:2, instance:tests.PetStoreMenu@50b494a6]" name="linksTakesToCorrectPageTest" duration-ms="2949" started-at="2020-04-06T17:03:27 CEST" finished-at="2020-04-06T17:03:30 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linksTakesToCorrectPageTest -->
+        <test-method status="PASS" signature="logInBtnTest()[pri:3, instance:tests.PetStoreMenu@50b494a6]" name="logInBtnTest" duration-ms="284" started-at="2020-04-06T17:03:30 CEST" finished-at="2020-04-06T17:03:30 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInBtnTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.PetStoreMenu@50b494a6]" name="afterClass" is-config="true" duration-ms="79" started-at="2020-04-06T17:03:30 CEST" finished-at="2020-04-06T17:03:30 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.PetStoreMenu -->
+      <class name="tests.CartTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.CartTest@3d99d22e]" name="setup" is-config="true" duration-ms="9362" started-at="2020-04-06T17:05:44 CEST" finished-at="2020-04-06T17:05:53 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isInCart()[pri:1, instance:tests.CartTest@3d99d22e]" name="isInCart" duration-ms="3320" started-at="2020-04-06T17:05:53 CEST" finished-at="2020-04-06T17:05:56 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isInCart -->
+        <test-method status="PASS" signature="compareTotalPrices()[pri:2, instance:tests.CartTest@3d99d22e]" name="compareTotalPrices" duration-ms="156" started-at="2020-04-06T17:05:56 CEST" finished-at="2020-04-06T17:05:57 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTotalPrices -->
+        <test-method status="PASS" signature="deleteCookiesTest()[pri:3, instance:tests.CartTest@3d99d22e]" name="deleteCookiesTest" duration-ms="2531" started-at="2020-04-06T17:05:57 CEST" finished-at="2020-04-06T17:05:59 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCookiesTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.CartTest@3d99d22e]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-06T17:05:59 CEST" finished-at="2020-04-06T17:05:59 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.RegistrationTest@3cef309d]" name="setup" is-config="true" duration-ms="9350" started-at="2020-04-06T17:03:30 CEST" finished-at="2020-04-06T17:03:40 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="registeringUsers()[pri:0, instance:tests.RegistrationTest@3cef309d]" name="registeringUsers" duration-ms="84110" started-at="2020-04-06T17:03:40 CEST" finished-at="2020-04-06T17:05:04 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringUsers -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.RegistrationTest@3cef309d]" name="afterClass" is-config="true" duration-ms="86" started-at="2020-04-06T17:05:04 CEST" finished-at="2020-04-06T17:05:04 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.RegistrationTest -->
+      <class name="tests.LogInTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTest@32709393]" name="setup" is-config="true" duration-ms="9391" started-at="2020-04-06T17:05:04 CEST" finished-at="2020-04-06T17:05:13 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:tests.LogInTest@32709393]" name="signIn" duration-ms="30385" started-at="2020-04-06T17:05:13 CEST" finished-at="2020-04-06T17:05:44 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.LogInTest@2b552920]" name="afterClass" is-config="true" duration-ms="-1586102196570" started-at="2020-04-05T17:56:36 CEST" finished-at="1970-01-01T01:00:00 CET">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LogInTest@32709393]" name="afterClass" is-config="true" duration-ms="82" started-at="2020-04-06T17:05:44 CEST" finished-at="2020-04-06T17:05:44 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.LogInTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="126069" started-at="2020-04-06T17:05:59 CEST" finished-at="2020-04-06T17:08:05 CEST">
+      <class name="tests.EnterTheStore">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.EnterTheStore@51cdd8a]" name="setup" is-config="true" duration-ms="3300" started-at="2020-04-06T17:05:59 CEST" finished-at="2020-04-06T17:06:02 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="enterStore()[pri:0, instance:tests.EnterTheStore@51cdd8a]" name="enterStore" duration-ms="605" started-at="2020-04-06T17:06:02 CEST" finished-at="2020-04-06T17:06:03 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterStore -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.EnterTheStore@51cdd8a]" name="afterClass" is-config="true" duration-ms="759" started-at="2020-04-06T17:06:03 CEST" finished-at="2020-04-06T17:06:04 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.EnterTheStore -->
+      <class name="tests.PetStoreMenu">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.PetStoreMenu@d44fc21]" name="setup" is-config="true" duration-ms="2843" started-at="2020-04-06T17:06:04 CEST" finished-at="2020-04-06T17:06:07 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="allLinksVerifyTest()[pri:1, instance:tests.PetStoreMenu@d44fc21]" name="allLinksVerifyTest" duration-ms="3318" started-at="2020-04-06T17:06:07 CEST" finished-at="2020-04-06T17:06:10 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allLinksVerifyTest -->
+        <test-method status="FAIL" signature="linksTakesToCorrectPageTest()[pri:2, instance:tests.PetStoreMenu@d44fc21]" name="linksTakesToCorrectPageTest" duration-ms="1859" started-at="2020-04-06T17:06:10 CEST" finished-at="2020-04-06T17:06:12 CEST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <area href="Catalog.action?viewCategory=&categoryId=BIRDS"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-UKEP2C8', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403064753, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 700, moz:profile: C:\Users\Dusan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 90fe2d43-37c8-4fbd-9fad-7c0b84716760]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <area href="Catalog.action?viewCategory=&categoryId=BIRDS"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-UKEP2C8', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403064753, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 700, moz:profile: C:\Users\Dusan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 90fe2d43-37c8-4fbd-9fad-7c0b84716760
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.PetStoreMenuPage.centerNavLinksWork(PetStoreMenuPage.java:150)
+at pages.PetStoreMenuPage.allLinksWork(PetStoreMenuPage.java:164)
+at tests.PetStoreMenu.linksTakesToCorrectPageTest(PetStoreMenu.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linksTakesToCorrectPageTest -->
+        <test-method status="PASS" signature="logInBtnTest()[pri:3, instance:tests.PetStoreMenu@d44fc21]" name="logInBtnTest" duration-ms="266" started-at="2020-04-06T17:06:12 CEST" finished-at="2020-04-06T17:06:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInBtnTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.PetStoreMenu@d44fc21]" name="afterClass" is-config="true" duration-ms="833" started-at="2020-04-06T17:06:12 CEST" finished-at="2020-04-06T17:06:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.PetStoreMenu -->
+      <class name="tests.CartTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.CartTest@4e7dc304]" name="setup" is-config="true" duration-ms="3254" started-at="2020-04-06T17:07:56 CEST" finished-at="2020-04-06T17:08:00 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isInCart()[pri:1, instance:tests.CartTest@4e7dc304]" name="isInCart" duration-ms="2934" started-at="2020-04-06T17:08:00 CEST" finished-at="2020-04-06T17:08:03 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isInCart -->
+        <test-method status="PASS" signature="compareTotalPrices()[pri:2, instance:tests.CartTest@4e7dc304]" name="compareTotalPrices" duration-ms="63" started-at="2020-04-06T17:08:03 CEST" finished-at="2020-04-06T17:08:03 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTotalPrices -->
+        <test-method status="PASS" signature="deleteCookiesTest()[pri:3, instance:tests.CartTest@4e7dc304]" name="deleteCookiesTest" duration-ms="2498" started-at="2020-04-06T17:08:03 CEST" finished-at="2020-04-06T17:08:05 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCookiesTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.CartTest@4e7dc304]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-06T17:08:05 CEST" finished-at="2020-04-06T17:08:05 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.RegistrationTest@23faf8f2]" name="setup" is-config="true" duration-ms="3242" started-at="2020-04-06T17:06:13 CEST" finished-at="2020-04-06T17:06:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="registeringUsers()[pri:0, instance:tests.RegistrationTest@23faf8f2]" name="registeringUsers" duration-ms="69950" started-at="2020-04-06T17:06:16 CEST" finished-at="2020-04-06T17:07:26 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringUsers -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.RegistrationTest@23faf8f2]" name="afterClass" is-config="true" duration-ms="765" started-at="2020-04-06T17:07:26 CEST" finished-at="2020-04-06T17:07:27 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.RegistrationTest -->
+      <class name="tests.LogInTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTest@2d6eabae]" name="setup" is-config="true" duration-ms="3256" started-at="2020-04-06T17:07:27 CEST" finished-at="2020-04-06T17:07:30 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:tests.LogInTest@2d6eabae]" name="signIn" duration-ms="25445" started-at="2020-04-06T17:07:30 CEST" finished-at="2020-04-06T17:07:56 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LogInTest@2d6eabae]" name="afterClass" is-config="true" duration-ms="860" started-at="2020-04-06T17:07:56 CEST" finished-at="2020-04-06T17:07:56 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.LogInTest -->
+    </test> <!-- FirefoxTest -->
+    <test name="EdgeTest" duration-ms="171518" started-at="2020-04-06T17:08:05 CEST" finished-at="2020-04-06T17:10:57 CEST">
+      <class name="tests.EnterTheStore">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.EnterTheStore@1f7030a6]" name="setup" is-config="true" duration-ms="9468" started-at="2020-04-06T17:08:05 CEST" finished-at="2020-04-06T17:08:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="enterStore()[pri:0, instance:tests.EnterTheStore@1f7030a6]" name="enterStore" duration-ms="1283" started-at="2020-04-06T17:08:15 CEST" finished-at="2020-04-06T17:08:16 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterStore -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.EnterTheStore@1f7030a6]" name="afterClass" is-config="true" duration-ms="94" started-at="2020-04-06T17:08:16 CEST" finished-at="2020-04-06T17:08:16 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.EnterTheStore -->
+      <class name="tests.PetStoreMenu">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.PetStoreMenu@5a1c0542]" name="setup" is-config="true" duration-ms="9291" started-at="2020-04-06T17:08:16 CEST" finished-at="2020-04-06T17:08:25 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="allLinksVerifyTest()[pri:1, instance:tests.PetStoreMenu@5a1c0542]" name="allLinksVerifyTest" duration-ms="3192" started-at="2020-04-06T17:08:25 CEST" finished-at="2020-04-06T17:08:28 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allLinksVerifyTest -->
+        <test-method status="PASS" signature="linksTakesToCorrectPageTest()[pri:2, instance:tests.PetStoreMenu@5a1c0542]" name="linksTakesToCorrectPageTest" duration-ms="3251" started-at="2020-04-06T17:08:28 CEST" finished-at="2020-04-06T17:08:32 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linksTakesToCorrectPageTest -->
+        <test-method status="PASS" signature="logInBtnTest()[pri:3, instance:tests.PetStoreMenu@5a1c0542]" name="logInBtnTest" duration-ms="276" started-at="2020-04-06T17:08:32 CEST" finished-at="2020-04-06T17:08:32 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInBtnTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.PetStoreMenu@5a1c0542]" name="afterClass" is-config="true" duration-ms="78" started-at="2020-04-06T17:08:32 CEST" finished-at="2020-04-06T17:08:32 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.PetStoreMenu -->
+      <class name="tests.CartTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.CartTest@27a5f880]" name="setup" is-config="true" duration-ms="9396" started-at="2020-04-06T17:10:41 CEST" finished-at="2020-04-06T17:10:51 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isInCart()[pri:1, instance:tests.CartTest@27a5f880]" name="isInCart" duration-ms="3354" started-at="2020-04-06T17:10:51 CEST" finished-at="2020-04-06T17:10:54 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isInCart -->
+        <test-method status="PASS" signature="compareTotalPrices()[pri:2, instance:tests.CartTest@27a5f880]" name="compareTotalPrices" duration-ms="140" started-at="2020-04-06T17:10:54 CEST" finished-at="2020-04-06T17:10:54 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTotalPrices -->
+        <test-method status="PASS" signature="deleteCookiesTest()[pri:3, instance:tests.CartTest@27a5f880]" name="deleteCookiesTest" duration-ms="2573" started-at="2020-04-06T17:10:54 CEST" finished-at="2020-04-06T17:10:57 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCookiesTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.CartTest@27a5f880]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-06T17:10:57 CEST" finished-at="2020-04-06T17:10:57 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.RegistrationTest@396f6598]" name="setup" is-config="true" duration-ms="9360" started-at="2020-04-06T17:08:32 CEST" finished-at="2020-04-06T17:08:41 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="registeringUsers()[pri:0, instance:tests.RegistrationTest@396f6598]" name="registeringUsers" duration-ms="80508" started-at="2020-04-06T17:08:41 CEST" finished-at="2020-04-06T17:10:02 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringUsers -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.RegistrationTest@396f6598]" name="afterClass" is-config="true" duration-ms="75" started-at="2020-04-06T17:10:02 CEST" finished-at="2020-04-06T17:10:02 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.RegistrationTest -->
+      <class name="tests.LogInTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTest@394e1a0f]" name="setup" is-config="true" duration-ms="9386" started-at="2020-04-06T17:10:02 CEST" finished-at="2020-04-06T17:10:11 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:tests.LogInTest@394e1a0f]" name="signIn" duration-ms="29691" started-at="2020-04-06T17:10:11 CEST" finished-at="2020-04-06T17:10:41 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LogInTest@394e1a0f]" name="afterClass" is-config="true" duration-ms="95" started-at="2020-04-06T17:10:41 CEST" finished-at="2020-04-06T17:10:41 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.LogInTest -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- https://petstore.octoperf.com/ -->
 </testng-results>
