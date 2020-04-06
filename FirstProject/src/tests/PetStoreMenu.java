@@ -29,7 +29,7 @@ import pages.PetStoreMenuPage;public class PetStoreMenu {
 	@Parameters("browser")
 	public void setup(String browser) throws Exception {
 		if(browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "driver-lib\\firefoxdriver.exe");
+			System.setProperty("webdriver.gecko.driver", "driver-lib\\geckodriver.exe");
 			this.driver = new FirefoxDriver();
 		}
 		else if(browser.equalsIgnoreCase("chrome")) {
@@ -73,7 +73,8 @@ import pages.PetStoreMenuPage;public class PetStoreMenu {
 
 	@AfterClass
 	public void afterClass() {
-		this.driver.close();
+	this.driver.close();
+//
+	
 	}
-
 }

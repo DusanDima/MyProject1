@@ -27,7 +27,7 @@ public class RegistrationTest {
 	@Parameters("browser")
 	public void setup(String browser) throws Exception {
 		if(browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "driver-lib\\firefoxdriver.exe");
+			System.setProperty("webdriver.gecko.driver", "driver-lib\\geckodriver.exe");
 			this.driver = new FirefoxDriver();
 		}
 		else if(browser.equalsIgnoreCase("chrome")) {
@@ -76,7 +76,7 @@ public class RegistrationTest {
 			String country = ExcelUtils.getDataAt(i, 11);
 			String language = ExcelUtils.getDataAt(i, 12);
 			String category =  ExcelUtils.getDataAt(i, 13);
-			
+
 			newUser.fillForm(userID, password, password, name, lastName, email, phone, address1, address2, city, state,
 					zip, country,language, category);
 
@@ -90,7 +90,7 @@ public class RegistrationTest {
 	public void afterClass() {
 		ExcelUtils.closeExcell();
 		this.driver.close();
+
+		
 	}
-
 }
-
