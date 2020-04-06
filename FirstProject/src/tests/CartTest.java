@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
+import org.testng.xml.ISuiteParser;
 
 import pages.CartPage;
 import pages.StoreItemPage;
@@ -33,7 +33,7 @@ public class CartTest {
 	@Parameters("browser")
 	public void setup(String browser) throws Exception {
 		if(browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "driver-lib\\firefoxdriver.exe");
+			System.setProperty("webdriver.gecko.driver", "driver-lib\\geckodriver.exe");
 			this.driver = new FirefoxDriver();
 		}
 		else if(browser.equalsIgnoreCase("chrome")) {
@@ -47,13 +47,12 @@ public class CartTest {
 		else {
 			throw new Exception("Browser is not correct");
 		}
-		this.locators = new Properties();
+		
+		this.locators =  new Properties();
 		locators.load(new FileInputStream("config/petstore.properties"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.navigate().to(this.locators.getProperty("store_menu_page_url"));
-
 	}
 
 	@Test(priority = 1)
@@ -98,7 +97,7 @@ public class CartTest {
 	@AfterClass
 	public void afterClass() {
 		ExcelUtils.closeExcell();
-		this.driver.close();
+		
+		
 	}
-
 }
